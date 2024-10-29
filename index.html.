@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genie Display</title>
+  <style>
+    /* CSS from previous example */
+
+    /* Container for the genie */
+    .genie-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    /* Genie body */
+    .genie-body {
+      position: relative;
+      width: 120px;
+      height: 200px;
+      background: linear-gradient(180deg, #6a0dad, #4b0082);
+      border-radius: 50% 50% 40% 40%;
+    }
+
+    /* Genie head */
+    .genie-head {
+      position: absolute;
+      top: -60px;
+      left: 20px;
+      width: 80px;
+      height: 80px;
+      background-color: #ffd700;
+      border-radius: 50%;
+      box-shadow: inset -5px -5px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /* Genie eyes */
+    .genie-eye {
+      position: absolute;
+      top: 25px;
+      width: 12px;
+      height: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    .genie-eye.left {
+      left: 20px;
+    }
+    .genie-eye.right {
+      right: 20px;
+    }
+
+    /* Genie mouth */
+    .genie-mouth {
+      position: absolute;
+      top: 50px;
+      left: 25px;
+      width: 30px;
+      height: 10px;
+      background-color: #000;
+      border-radius: 0 0 50% 50%;
+    }
+
+    /* Genie tail */
+    .genie-tail {
+      position: absolute;
+      bottom: -30px;
+      left: 40px;
+      width: 40px;
+      height: 80px;
+      background: linear-gradient(180deg, #4b0082, #6a0dad);
+      border-radius: 40% 40% 0 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="genie-container">
+    <div class="genie-body">
+      <div class="genie-head">
+        <div class="genie-eye left"></div>
+        <div class="genie-eye right"></div>
+        <div class="genie-mouth"></div>
+      </div>
+      <div class="genie-tail"></div>
+    </div>
+  </div>
+</body>
+</html>
