@@ -76,6 +76,10 @@
       transform: rotate(45deg);
     }
   </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genie Display</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="genie-container">
